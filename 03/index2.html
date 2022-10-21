@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <title>Prueba Vue</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+  <div id="aplicacion">
+    <p>Ingrese un valor entre 1 y 100:
+    <input type="number" v-model="numero" min="1" max="100"></p>
+    <p v-if="numero<=9">Tiene un dígito</p>
+    <p v-else-if="numero<=99">Tiene dos dígitos</p>
+    <p v-else>Tiene tres dígitos</p>
+  </div>
+  
+  <script src="../vue.js"></script>
+  <script src="./index2.js"></script>   
+
+</body>
+</html>
